@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css"/>
+
+  <title>Media-army</title>
+  <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=cd38bb88-a266-4d7e-a366-a7fc4eaacb3d&lang=ru_RU"></script>
+</head>
+<body>
+<div class="container">
+  <!--    Адаптивный каталог  -->
+  <div class="responsive-catalog">
+    <div class="responsive-catalog-wrapper menu closed ">
+      <div class="responsive-catalog__header">
+        <button class="responsive-catalog__header-btn">
+          <img src="./assets/img/catalog/arrow-left.svg" alt="arrow-left"/>
+        </button>
+        <h3>Каталог товаров</h3>
+        <button class="responsive-catalog__header-btn-close">
+          <img src="./assets/img/catalog/close.svg" alt="close"/>
+        </button>
+      </div>
+      <ul class="responsive-catalog__ul">
+        <li class="responsive-catalog_li">
+          <div class="responsive-catalog__title">
+            <img src="./assets/img/catalog/star.svg" alt="star"/>
+            <a>Актуальные</a>
+          </div>
+        </li>
+        <li class="responsive-catalog_li">
+          <div class="responsive-catalog__title">
+            <img src="./assets/img/catalog/percent.svg" alt="percent"/>
+            <a>Акции</a>
+          </div>
+        </li>
+        <li class="responsive-catalog_li" data-responisve="christmas-items">
+          <a>Новогодние товары</a>
+        </li>
+        <li class="responsive-catalog_li">
+          <a>Галантерея и аксессуары</a>
+        </li>
+        <li class="responsive-catalog_li">
+          <a>Хозтовары</a>
+        </li>
+        <li class="responsive-catalog_li">
+          <a>Праздники и подарки</a>
+        </li>
+        <li class="responsive-catalog_li">
+          <a>Интерьерные товары для дома</a>
+        </li>
+        <li class="responsive-catalog_li">
+          <a>Домашний текстиль</a>
+        </li>
+        <li class="responsive-catalog_li">
+          <a>Творчество</a>
+        </li>
+        <li class="responsive-catalog_li">
+          <a>Туризм и активный отдых</a>
+        </li>
+        <li class="responsive-catalog_li">
+          <a>Товары для рассады</a>
+        </li>
+        <li class="responsive-catalog_li">
+          <a>Игрушки, товары для детей</a>
+        </li>
+        <li class="responsive-catalog_li">
+          <a>Пикник</a>
+        </li>
+        <li class="responsive-catalog_li">
+          <a>Спортивные товары</a>
+        </li>
+        <li class="responsive-catalog_li">
+          <a>Товары для животных</a>
+        </li>
+        <li class="responsive-catalog_li">
+          <a>Интерьерное освещение</a>
+        </li>
+        <li class="responsive-catalog_li">
+          <a>Одежда, обувь, головные уборы</a>
+        </li>
+        <li class="responsive-catalog_li">
+          <a>Снегоуборочный инвентарь</a>
+        </li>
+        <li class="responsive-catalog_li">
+          <a>Бассейны и аксессуары</a>
+        </li>
+        <li class="responsive-catalog_li">
+          <a>Средства гигиены и бытовая химия</a>
+        </li>
+        <li class="responsive-catalog_li">
+          <a>Товары для бани и сауны</a>
+        </li>
+        <li class="responsive-catalog_li">
+          <a>Строительство и ремонт</a>
+        </li>
+        <li class="responsive-catalog_li">
+          <a>Автотовары</a>
+        </li>
+      </ul>
+    </div>
+    <div class="responsive-catalog-wrapper level1 closed" data-responisve="christmas-items">
+      <div class="responsive-catalog__header">
+        <button class="responsive-catalog__header-btn">
+          <img src="./assets/img/catalog/arrow-left.svg" alt="arrow-left"/>
+        </button>
+        <h3>Новогодние товары</h3>
+        <button class="responsive-catalog__header-btn-close">
+          <img src="./assets/img/catalog/close.svg" alt="close"/>
+        </button>
+      </div>
+      <ul class="responsive-catalog__ul">
+        <li class="button__news responsive-catalog-news">Новинки</li>
+        <li class="responsive-catalog_li">
+          <a class="">
+            Все товары категории
+          </a>
+        </li>
+        <li class="responsive-catalog_li" data-responisve="garlands">
+          <a class="">
+            Гирлянды и освещение
+          </a>
+        </li>
+        <li class="responsive-catalog_li">
+          <a class="">
+            Ёлки искусственные
+          </a>
+        </li>
+        <li class="responsive-catalog_li">
+          <a class="">
+            Украшения для ёлки
+          </a>
+        </li>
+        <li class="responsive-catalog_li">
+          <a class="">
+            Сувениры новогодние
+          </a>
+        </li>
+        <li class="responsive-catalog_li">
+          <a class="">
+            Посуда новогодняя
+          </a>
+        </li>
+        <li class="responsive-catalog_li">
+          <a class="">
+            Текстиль новогодний
+          </a>
+        </li>
+        <li class="responsive-catalog_li">
+          <a class="">
+            Карнавальные товары
+          </a>
+        </li>
+        <li class="responsive-catalog_li none_arr">
+          <a class="">
+            Игрушки новогодние
+          </a>
+        </li>
+        <li class="responsive-catalog_li">
+          <a class="">
+            Галантерея новогодняя
+          </a>
+        </li>
+        <li class="responsive-catalog_li">
+          <a class="">
+            Упаковка новогодняя
+          </a>
+        </li>
+        <li class="responsive-catalog_li none_arr">
+          <a class="">
+            Новогодние книжки
+          </a>
+        </li>
+        <li class="responsive-catalog_li">
+          <a class="">
+            Канцтовары новогодние
+          </a>
+        </li>
+        <li class="responsive-catalog_li">
+          <a class="">
+            Атрибуты праздника
+          </a>
+        </li>
+        <li class="responsive-catalog_li">
+          <a class="">
+            Одежда и обувь новогодние
+          </a>
+        </li>
+        <li class="responsive-catalog_li none_arr">
+          <a class="">
+            Товары для дома новогодние
+          </a>
+        </li>
+        <li class="responsive-catalog_li none_arr">
+          <a class="">
+            Открытки новогодние
+          </a>
+        </li>
+        <li class="responsive-catalog_li">
+          <a>Предыдущие коллекции</a>
+        </li>
+      </ul>
+    </div>
+    <div class="responsive-catalog-wrapper level2 closed" data-responisve="garlands">
+      <div class="responsive-catalog__header">
+        <button class="responsive-catalog__header-btn">
+          <img src="./assets/img/catalog/arrow-left.svg" alt="arrow-left"/>
+        </button>
+        <div class="responsive-catalog-title">
+          <span>Новогодние товары</span>
+          <h3>Гирлянды и освещение</h3>
+        </div>
+        <button class="responsive-catalog__header-btn-close">
+          <img src="./assets/img/catalog/close.svg" alt="close"/>
+        </button>
+      </div>
+      <ul class="responsive-catalog__ul">
+        <li class="responsive-catalog_li none_arr">
+          <a>Гирлянды для дома</a>
+        </li>
+        <li class="responsive-catalog_li none_arr">
+          <a>Гирлянды уличные</a>
+        </li>
+        <li class="responsive-catalog_li none_arr">
+          <a>Гирлянды на батарейках,USB</a>
+        </li>
+        <li class="responsive-catalog_li none_arr">
+          <a>Верхушки с подсветкой</a>
+        </li>
+        <li class="responsive-catalog_li none_arr">
+          <a>Световые приборы</a>
+        </li>
+        <li class="responsive-catalog_li none_arr">
+          <a>Фигуры световые</a>
+        </li>
+        <li class="responsive-catalog_li none_arr">
+          <a>Удлинители для гирлянд</a>
+        </li>
+        <li class="responsive-catalog_li none_arr">
+          <a>Ленты светодиодные</a>
+        </li>
+      </ul>
+      <div class="catalog__slider-mobile">
+        <div class="slider-catalog-mobile swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img class="swiper-img-mobile" src="assets/img/catalog/catalog-slider_garland.png" alt="garland"/>
+            </div>
+            <div class="swiper-slide">
+              <img class="swiper-img-mobile" src="assets/img/catalog/catalog-slider_textile.png" alt="textile"/>
+            </div>
+            <div class="swiper-slide">
+              <img class="swiper-img-mobile" src="assets/img/catalog/catalog-slider_garland.png" alt="garland"/>
+            </div>
+            <div class="swiper-slide">
+              <img class="swiper-img-mobile" src="assets/img/catalog/catalog-slider_textile.png" alt="textile"/>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <header class="container__header">
+  <!-- Шапка сайта (меню)  -->
+    <div class="header__row">
+      <!--        Логотип  -->
+      <div class="header__row-logo no-select">
+        <h2 class="header__logo-title">celestial</h2>
+        <p class="header__logo-description">покупки оптом из китая</p>
+      </div>
+      <div class="header__table-btns">
+        <button>
+          <img src="./assets/img/header/table-location.svg" alt="table-location"/>
+        </button>
+        <button>
+          <img src="./assets/img/header/table-search.svg" alt="table-search"/>
+        </button>
+        <button class="burger-menu">
+          <img src="./assets/img/header/table-burger.svg" alt="table-burger"/>
+        </button>
+      </div>
+      <!--        Навигационная панель  -->
+      <div class="header__row_first">
+        <div class="first__row no-select">
+          <div class="first__row-location">
+            <img src="./assets/img/header/location.svg" alt="location"/>
+            <p>екатеринбург</p>
+          </div>
+          <nav class="first__row-navigate">
+            <ul>
+              <li>
+                <div class="select">
+                  <div class="select__header">
+                    <div class="select__items">
+                            <span class="select__items_title"
+                            >О компании</span
+                            >
+                    </div>
+                  </div>
+                  <div class="select__item-list">
+                    <div class="list__item">
+                      О нас
+                    </div>
+                    <div class="list__item">
+                      Отзывы
+                    </div>
+                    <div class="list__item">
+                      Вакансии
+                    </div>
+                    <div class="list__item">
+                      Реквизиты
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="select">
+                  <div class="select__header">
+                    <div class="select__items">
+                            <span class="select__items_title"
+                            >Покупателям</span
+                            >
+                    </div>
+                  </div>
+                  <div class="select__item-list">
+                    <div class="list__item">
+                      Цены
+                    </div>
+                    <div class="list__item">
+                      Скидки
+                    </div>
+                    <div class="list__item">
+                      Хит-Продаж
+                    </div>
+                    <div class="list__item">
+                      Сезон-Прайс
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>поставщикам</li>
+              <li>контакты</li>
+            </ul>
+          </nav>
+        </div>
+        <hr class="line-separator"/>
+        <div class="second__row no-select">
+          <button
+                  class="second__row-catalog-btn"
+          >
+            <img
+
+                    class="img-catalog-btn"
+                    src="./assets/img/header/btn-catalog.svg"
+                    alt="button-catalog"
+            />
+            <span>каталог товаров</span>
+          </button>
+          <form class="second__row-search">
+
+            <button class="search-form_btn">
+              <img src="./assets/img/header/search.svg" alt="search"/>
+            </button>
+            <div class="search-form__wrap-input">
+              <label>
+                <input
+                        type="text"
+                        class="search-form__input"
+                        placeholder="Поиск товаров..."
+                />
+              </label>
+              <button
+                      class="search-form_clear-btn"
+                      title="Clear input field"
+              ></button>
+            </div>
+          </form>
+          <div class="second__row-btns">
+            <button class="row-btn row-btn_favorites">
+              <span class="row-btn_icon-wrapper">
+                   <!-- добавить класс view для отображения количества -->
+                <span class="row-btn_icon-count view">8</span>
+              <img src="./assets/img/header/favorite.svg" alt="favorite"/>
+              </span>
+              <span class="row-btn-text">
+              избранное
+              </span>
+            </button>
+            <button class="row-btn row-btn_basket">
+              <span class="row-btn_icon-wrapper">
+                <!-- добавить класс view для отображения количества -->
+                <span class="row-btn_icon-count view">120</span>
+              <img class="btn_img-cart" src="./assets/img/header/basket.svg" alt="basket"/>
+              </span>
+              <span class="row-btn-text">
+              корзина
+              </span>
+            </button>
+            <!-- добавить класс login при входе в учетную запись-->
+            <button class="row-btn-login ">
+              <img src="./assets/img/header/login.svg" alt="login">
+              <span class="login-title">
+              войти
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--           Каталог          -->
+    <div class="catalog">
+      <div class="catalog__category">
+        <div class="catalog__category-types">
+          <ul class="first__column">
+            <li class="catalog_li" id="actual">
+              <a class="catalog__item catalog__type-item">
+                <div class="item__title">
+                  <img src="./assets/img/catalog/star.svg" alt="star"/>
+                  <span>Актуальные</span>
+                </div>
+              </a>
+            </li>
+            <li class="catalog_li" id="action">
+              <a class="catalog__item catalog__type-item">
+                <div class="item__title">
+                  <img src="./assets/img/catalog/percent.svg" alt="percent"/>
+                  <span>Акции</span>
+                </div>
+              </a>
+            </li>
+            <li class="catalog_li" id="christmas">
+              <a class="catalog__item catalog__type-item">
+                <span>Новогодние товары</span>
+              </a>
+            </li>
+            <li class="catalog_li" id="accessories">
+              <a class="catalog__item catalog__type-item">
+                <span>Галантерея и аксессуары</span>
+              </a>
+            </li>
+            <li class="catalog_li" id="householdGoods">
+              <a class="catalog__item catalog__type-item">
+                <span>Хозтовары</span>
+              </a>
+            </li>
+            <li class="catalog_li" id="holidaysGifts">
+              <a class="catalog__item catalog__type-item">
+                <span>Праздники и подарки</span>
+              </a>
+            </li>
+            <li class="catalog_li" id="interiorHomeProducts">
+              <a class="catalog__item catalog__type-item">
+                <span>Интерьерные товары для дома</span>
+              </a>
+            </li>
+            <li class="catalog_li" id="homeTextiles">
+              <a class="catalog__item catalog__type-item">
+                <span>Домашний текстиль</span>
+              </a>
+            </li>
+            <li class="catalog_li" id="creation">
+              <a class="catalog__item catalog__type-item">
+                <span>Творчество</span>
+              </a>
+            </li>
+            <li class="catalog_li" id="tourism">
+              <a class="catalog__item catalog__type-item">
+                <span>Туризм и активный отдых</span>
+              </a>
+            </li>
+            <li class="catalog_li" id="productsSeedlings">
+              <a class="catalog__item catalog__type-item">
+                <span>Товары для рассады</span>
+              </a>
+            </li>
+            <li class="catalog_li" id="toys">
+              <a class="catalog__item catalog__type-item">
+                <span>Игрушки, товары для детей</span>
+              </a>
+            </li>
+            <li class="catalog_li" id="picnic">
+              <a class="catalog__item catalog__type-item">
+                <span>Пикник</span>
+              </a>
+            </li>
+            <li class="catalog_li" id="sportingGoods">
+              <a class="catalog__item catalog__type-item">
+                <span>Спортивные товары</span>
+              </a>
+            </li>
+            <li class="catalog_li" id="goodsPets">
+              <a class="catalog__item catalog__type-item">
+                <span>Товары для животных</span>
+              </a>
+            </li>
+            <li class="catalog_li" id="interiorLighting">
+              <a class="catalog__item catalog__type-item">
+                <span>Интерьерное освещение</span>
+              </a>
+            </li>
+            <li class="catalog_li" id="clothesShoes">
+              <a class="catalog__item catalog__type-item">
+                <span>Одежда, обувь, головные уборы</span>
+              </a>
+            </li>
+            <li class="catalog_li" id="snowRemoval">
+              <a class="catalog__item catalog__type-item">
+                <span>Снегоуборочный инвентарь</span>
+              </a>
+            </li>
+            <li class="catalog_li" id="swimmingPools">
+              <a class="catalog__item catalog__type-item">
+                <span>Бассейны и аксессуары</span>
+              </a>
+            </li>
+            <li class="catalog_li" id="hygiene">
+              <a class="catalog__item catalog__type-item">
+                <span>Средства гигиены и бытовая химия</span>
+              </a>
+            </li>
+            <li class="catalog_li" id="bathsSaunas">
+              <a class="catalog__item catalog__type-item">
+                <span>Товары для бани и сауны</span>
+              </a>
+            </li>
+            <li class="catalog_li" id="constructionRepair">
+              <a class="catalog__item catalog__type-item">
+                <span>Строительство и ремонт</span>
+              </a>
+            </li>
+            <li class="catalog_li" id="automotiveProducts">
+              <a class="catalog__item catalog__type-item">
+                <span>Автотовары</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="catalog__item-levels">
+          <!--        Вложенное меню первого уровня       -->
+          <div class="level1__wrapper">
+            <ul class="none" data-category="christmas">
+              <li class="button__news">Новинки</li>
+              <li class="catalog_li" id="all">
+                <a class="catalog__item">
+                  <span>Все товары категории</span>
+                </a>
+              </li>
+              <li class="catalog_li" id="garlands">
+                <a class="catalog__item">
+                  <span>Гирлянды и освещение</span>
+                </a>
+              </li>
+              <li class="catalog_li" id="christmasTrees">
+                <a class="catalog__item">
+                  <span>Ёлки искусственные</span>
+                </a>
+              </li>
+              <li class="catalog_li" id="decorationsTrees">
+                <a class="catalog__item">
+                  <span>Украшения для ёлки</span>
+                </a>
+              </li>
+              <li class="catalog_li" id="christmasSouvenirs">
+                <a class="catalog__item">
+                  <span>Сувениры новогодние</span>
+                </a>
+              </li>
+              <li class="catalog_li" id="christmasTableware">
+                <a class="catalog__item">
+                  <span>Посуда новогодняя</span>
+                </a>
+              </li>
+              <li class="catalog_li" id="christmasTextile">
+                <a class="catalog__item">
+                  <span>Текстиль новогодний</span>
+                </a>
+              </li>
+              <li class="catalog_li" id="carnivalItems">
+                <a class="catalog__item">
+                  <span>Карнавальные товары</span>
+                </a>
+              </li>
+              <li class="catalog_li" id="christmasToys">
+                <a class="catalog__item none_arr">
+                  <span>Игрушки новогодние</span>
+                </a>
+              </li>
+              <li class="catalog_li" id="christmasHaberdashery">
+                <a class="catalog__item">
+                  <span>Галантерея новогодняя</span>
+                </a>
+              </li>
+              <li class="catalog_li" id="christmasPacking">
+                <a class="catalog__item">
+                  <span>Упаковка новогодняя</span>
+                </a>
+              </li>
+              <li class="catalog_li" id="christmasBooks">
+                <a class="catalog__item none_arr">
+                  <span>Новогодние книжки</span>
+                </a>
+              </li>
+              <li class="catalog_li" id="christmasStationery">
+                <a class="catalog__item">
+                  <span>Канцтовары новогодние</span>
+                </a>
+              </li>
+              <li class="catalog_li" id="holidayAttributes">
+                <a class="catalog__item">
+                  <span>Атрибуты праздника</span>
+                </a>
+              </li>
+              <li class="catalog_li" id="christmasClothesShoes">
+                <a class="catalog__item">
+                  <span>Одежда и обувь новогодние</span>
+                </a>
+              </li>
+              <li class="catalog_li" id="christmasHouseholdProducts">
+                <a class="catalog__item none_arr">
+                  <span>Товары для дома новогодние</span>
+                </a>
+              </li>
+              <li class="catalog_li" id="christmasPostcards">
+                <a class="catalog__item none_arr">
+                  <span>Открытки новогодние</span>
+                </a>
+              </li>
+              <li class="catalog_li" id="previousCollections">
+                <a class="catalog__item">
+                  <span>Предыдущие коллекции</span>
+
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!--        Вложенное меню второго уровня       -->
+          <div class="level2__wrapper">
+            <ul class="none" data-category="garlands">
+              <li class="catalog_li">
+                <a class="catalog__item catalog__type-item">
+                  <span>Гирлянды для дома</span>
+                </a>
+              </li>
+              <li class="catalog_li">
+                <a class="catalog__item catalog__type-item">
+                  <span>Гирлянды уличные</span>
+                </a>
+              </li>
+              <li class="catalog_li">
+                <a class="catalog__item catalog__type-item">
+                  <span>Гирлянды на батарейках,USB</span>
+                </a>
+              </li>
+              <li class="catalog_li">
+                <a class="catalog__item catalog__type-item">
+                  <span>Верхушки с подсветкой</span>
+                </a>
+              </li>
+              <li class="catalog_li">
+                <a class="catalog__item catalog__type-item">
+                  <span>Световые приборы</span>
+                </a>
+              </li>
+              <li class="catalog_li">
+                <a class="catalog__item catalog__type-item">
+                  <span>Фигуры световые</span>
+                </a>
+              </li>
+              <li class="catalog_li">
+                <a class="catalog__item catalog__type-item">
+                  <span>Удлинители для гирлянд</span>
+                </a>
+              </li>
+              <li class="catalog_li">
+                <a class="catalog__item catalog__type-item">
+                  <span>Ленты светодиодные</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!--        Слайдер каталога       -->
+          <div class="catalog__slider">
+            <div class="slider-catalog swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="swiper-img" src="assets/img/catalog/catalog-slider_garland.png" alt="garland"/>
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-img" src="assets/img/catalog/catalog-slider_textile.png" alt="textile"/>
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-img" src="assets/img/catalog/catalog-slider_garland.png" alt="garland"/>
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-img" src="assets/img/catalog/catalog-slider_textile.png" alt="textile"/>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="swiper-button-next catalog_slider-btn"></div>
+            <div class="swiper-button-prev catalog_slider-btn"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <hr class="line-separator device"/>
+  <!--    Адаптивное меню каталога  -->
+  <div class="responsive-menu">
+    <div class="responsive-menu__container">
+      <button class="responsive-menu__location">
+        <div class="responsive-menu__city">
+          <img src="./assets/img/header/location.svg" alt="location"/>
+          <span>Екатеринбург</span>
+        </div>
+        <img src="./assets/img/catalog/arrow-right.svg" alt="arrow-right"/>
+      </button>
+      <button class="responsive-menu__catalog">
+        <span>Каталог товаров</span>
+        <img src="./assets/img/catalog/catalog-products.png" alt="catalog-products"/>
+      </button>
+      <div class="responsive-menu__block-inform">
+        <h3>О компании</h3>
+        <span>О нас</span>
+        <span>Новости</span>
+        <span>Поставщикам</span>
+        <span>Отзывы</span>
+        <span>Вакансии</span>
+        <span>Реквизиты</span>
+        <span>Контакты</span>
+      </div>
+      <div class="responsive-menu__block-inform">
+        <h3>Покупателям</h3>
+        <span>Заключение договора</span>
+        <span>Доставка</span>
+        <span>Оплата</span>
+        <span>Получение товара</span>
+        <span>Возврат товара</span>
+        <span>Магазины</span>
+      </div>
+      <div class="responsive-menu__block-numbers">
+        <span>8 804 333-86-11</span>
+        <span>8 (343) 310-22-66</span>
+      </div>
+      <div class="responsive-menu__address">
+        <span>
+        Екатеринбург, ул. Черняховского, 99
+        </span>
+      </div>
+      <div class="responsive-menu__contact-btns">
+        <button class="responsive-menu__contact-btn">
+          <img src="./assets/img/social-icons/vk.svg" alt="vkontakte"/></button
+        >
+        <button class="responsive-menu__contact-btn">
+          <img src="./assets/img/social-icons/ok.svg" alt="odnoklassniki "/></button
+        >
+        <button class="responsive-menu__contact-btn">
+          <img src="./assets/img/social-icons/tg.svg" alt="telegram"/></button
+        >
+        <button class="responsive-menu__contact-btn">
+          <img src="./assets/img/social-icons/wa.svg" alt="whatsapp"/>
+        </button>
+      </div>
+    </div>
+    <div class="table-navbar-menu">
+      <button class="navbar__item">
+        <img src="./assets/img/table-navbar/home.svg" alt="home"/>
+        <span>Главная</span>
+      </button>
+      <button class="navbar__item catalog-btn_menu ">
+        <img src="./assets/img/table-navbar/catalog.svg" alt="catalog"/>
+        <span>Каталог</span>
+      </button>
+      <button class="navbar__item">
+      <span class="navbar-btn_icon-wrapper">
+                <!-- добавить класс view для отображения количества -->
+          <span class="navbar-btn_icon-count view">120</span>
+          <img src="./assets/img/table-navbar/basket.svg" alt="basket"/>
+      </span>
+        <span>Корзина</span>
+      </button>
+      <button class="navbar__item">
+       <span class="navbar-btn_icon-wrapper">
+                <!-- добавить класс view для отображения количества -->
+          <span class="navbar-btn_icon-count favorites view">8</span>
+        <img src="./assets/img/table-navbar/favorites.svg" alt="favorites"/>
+      </span>
+        <span>Избранное</span>
+      </button>
+      <button class="navbar__item login-btn_menu">
+        <img src="./assets/img/table-navbar/login.svg" alt="login"/>
+        <span>Войти</span>
+      </button>
+    </div>
+  </div>
+  <main class="main">
+    <!--    Слайдер  -->
+    <section class="section__slider">
+      <div class="slider swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img class="swiper-img" src="assets/img/slider/slide-villatic-season.png" alt="villatic-season"/>
+            <img
+                    src="./assets/img/slider/slide-season-mobile.png"
+                    alt="villatic-season"
+                    class="swiper-mobile"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper-img" src="assets/img/slider/slide-discounts.png" alt="slide-discounts"/>
+            <img
+                    src="assets/img/slider/slide-discounts-mobile.png"
+                    alt="slide-discounts"
+                    class="swiper-mobile"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper-img" src="assets/img/slider/slide-villatic-season.png" alt="villatic-season"/>
+            <img
+                    src="./assets/img/slider/slide-season-mobile.png"
+                    alt="villatic-season"
+                    class="swiper-mobile"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper-img" src="assets/img/slider/slide-discounts.png" alt="slide-discounts"/>
+            <img
+                    src="assets/img/slider/slide-discounts-mobile.png"
+                    alt="slide-discounts"
+                    class="swiper-mobile"
+            />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+    <!--    Преимущества  -->
+    <section class="advantages">
+      <div class="advantages__container">
+        <div class="advantages__item no-select">
+          <img src="./assets/img/advantages/like.svg" alt="like"/>
+          <span>
+                <nobr>прямые поставки</nobr>
+                <nobr> от производителей</nobr>
+              </span>
+        </div>
+        <div class="advantages__item no-select">
+          <img src="assets/img/advantages/check.svg" alt="check"/>
+          <span>30 лет опыта продаж</span>
+        </div>
+        <div class="advantages__item no-select">
+          <img src="./assets/img/advantages/box.svg" alt="box"/>
+          <span>более 100 000 товаров</span>
+        </div>
+        <div class="advantages__item no-select">
+          <img src="assets/img/advantages/warehouse.svg" alt="warehouse"/>
+          <span>склад категории А 14 000 м²</span>
+        </div>
+        <div class="advantages__item no-select">
+          <img src="./assets/img/advantages/delivery.svg" alt="delivery"/>
+          <span>доставка по России и странам ЕАЭС</span>
+        </div>
+      </div>
+    </section>
+    <!--    Карточки новинок  -->
+    <section class="section__cards">
+      <h2 class="cards__title">наши новинки</h2>
+      <div class="cards__container">
+        <a class="item1 grid-big">
+          <img src="./assets/img/cards/interior.png" alt="interior"/>
+        </a>
+        <a class="item2">
+          <img src="./assets/img/cards/beach.png" alt="beach"/>
+          <span>пляжные товары</span>
+        </a>
+        <a class="item3">
+          <img src="./assets/img/cards/gifts.png" alt="gifts"/>
+          <span>праздники и подарки</span>
+        </a>
+        <a class="item4">
+          <img src="./assets/img/cards/home-textiles.png" alt="home-textiles"/>
+          <span>домашний текстиль</span>
+        </a>
+        <a class="item5">
+          <img
+                  src="./assets/img/cards/household-goods.png"
+                  alt="household-goods"
+          />
+          <span>хозтовары</span>
+        </a>
+        <a class="item6">
+          <img src="./assets/img/cards/accessories.png" alt="accessories"/>
+          <span>галантерея <nobr>и аксессуары</nobr></span>
+        </a>
+        <a class="item7">
+          <img src="./assets/img/cards/sports.png" alt="sports"/>
+          <span>спортивные товары</span>
+        </a>
+        <a class="item8">
+          <img src="./assets/img/cards/hygiene.png" alt="hygiene"/>
+          <span>средства гигиены <nobr>и бытовая химия</nobr></span>
+        </a>
+        <a class="item9">
+          <img src="./assets/img/cards/pets.png" alt="pets"/>
+          <span>товары <nobr>для животных</nobr></span>
+        </a>
+      </div>
+    </section>
+    <!--    Баннер  -->
+    <section class="section__banner">
+      <div class="banner__container"></div>
+    </section>
+    <!--    Карта  -->
+    <section class="section__map">
+      <div class="map__container">
+        <h2 class="map__container-title">Магазины</h2>
+        <div class="select__city no-select">
+          <div class="select__city_header">
+            <div class="select__city_items">
+              <span class="city_item__city">Город</span>
+              <span class="city_item__selected">Екатеринбург</span>
+            </div>
+            <img
+                    src="./assets/img/map/arrow-bottom.svg"
+                    alt="arrow-bottom"
+                    class="select__icon"
+            />
+          </div>
+          <div class="select__body">
+            <div class="select__body_item city-item">Екатеринбург</div>
+          </div>
+        </div>
+        <div class="city_content">
+          <hr class="line-separator select-line"/>
+          <div class="city__list">
+            <div class="city__list_item">
+              <h3 class="list_item-title chern">Магазин на Черняховского</h3>
+              <div class="list_item-content">
+                <span>улица Черняховского, 99</span>
+                <span>+7 (999) 012-34-56</span>
+                <span>Ежедневно с 09:00 до 22:00</span>
+              </div>
+            </div>
+          </div>
+          <hr class="line-separator select-line"/>
+          <div class="city__list">
+            <div class="city__list_item">
+              <h3 class="list_item-title bluchera">Магазин на Блюхера</h3>
+              <div class="list_item-content">
+                <span>улица Блюхера, 99</span>
+                <span>+7 (999) 012-34-56 (доб. 02)</span>
+                <span>Ежедневно с 10:00 до 21:00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="map_wrapper">
+        <div class="map" id="map"></div>
+      </div>
+    </section>
+  </main>
+  <!--    Окно авторизации  -->
+  <div class="auth">
+    <div class="auth__modal">
+      <div class="auth__header">
+        <h2 class="auth__title">вход</h2>
+        <button class="auth__close">
+          <img src="./assets/img/auth/close-btn.svg" alt="close"/>
+        </button>
+      </div>
+      <p class="auth__sub-title">вход через E-mail:</p>
+      <form class="auth__form">
+        <!--     Для ошибки добавить класс invalid в input   -->
+        <div class="auth__form-row">
+          <input type="text" id="email" class="email" required/>
+          <label
+                  for="email"
+                  class="form-row_label"
+          >E-mail</label
+          >
+        </div>
+        <!--     Для ошибки добавить класс invalid в span   -->
+        <span class="message">Helper message</span>
+        <div class="auth__form-row">
+          <!--   Для ошибки добавить класс invalid в input  -->
+          <input
+                  type="password"
+                  id="password"
+                  class="password"
+                  name="password"
+                  required
+          />
+          <button
+                  class="password-visible"
+          ></button>
+          <label class="form-row_label" for="password">Пароль</label>
+        </div>
+        <!--     Для ошибки добавить класс invalid в span   -->
+        <span class="message">Helper message</span>
+        <div class="auth__btns">
+          <button class="auth__btn-login">
+            <input type="submit" value="Войти"/>
+          </button>
+          <button class="auth__btn-no-password">Забыли пароль?</button>
+        </div>
+      </form>
+      <hr class="line-separator margin-top20"/>
+      <div class="auth__registration">
+        <h2>у вас нет аккаунта?&nbsp;</h2>
+        <button class="auth__registration-btn">зарегистрируйтесь</button>
+      </div>
+    </div>
+  </div>
+  <!--    Мобильная навигация  -->
+  <div class="table-navbar">
+    <button class="navbar__item">
+      <img src="./assets/img/table-navbar/home.svg" alt="home"/>
+      <span>Главная</span>
+    </button>
+    <button class="navbar__item catalog-btn_menu open-catalog">
+      <img src="./assets/img/table-navbar/catalog.svg" alt="catalog"/>
+      <span>Каталог</span>
+    </button>
+    <button class="navbar__item">
+      <span class="navbar-btn_icon-wrapper">
+                <!-- добавить класс view для отображения количества -->
+          <span class="navbar-btn_icon-count view">120</span>
+          <img src="./assets/img/table-navbar/basket.svg" alt="basket"/>
+      </span>
+      <span>Корзина</span>
+    </button>
+    <button class="navbar__item">
+       <span class="navbar-btn_icon-wrapper">
+                <!-- добавить класс view для отображения количества -->
+          <span class="navbar-btn_icon-count favorites view">8</span>
+        <img src="./assets/img/table-navbar/favorites.svg" alt="favorites"/>
+      </span>
+      <span>Избранное</span>
+    </button>
+    <button class="navbar__item login-btn_menu">
+      <img src="./assets/img/table-navbar/login.svg" alt="login"/>
+      <span>Войти</span>
+    </button>
+  </div>
+</div>
+<script type="module" src="script.js"></script>
+</body>
+</html>
